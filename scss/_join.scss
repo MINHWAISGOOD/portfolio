@@ -1,0 +1,20 @@
+#join {
+    width: 100%;
+    padding: 200px 0;
+    background: #111;  
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+        position: relative;
+        h1 {
+            font: bold 60px/1 'Lora';
+            color: #eee;
+            margin-bottom: 50px;
+        }
+        >p {
+            font: 20px/1.2 'arial';
+            color: #eee;
+            padding: 30px 20vw 20px 15vw;
+        }
+    }  
+}

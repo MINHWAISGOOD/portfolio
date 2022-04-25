@@ -4,6 +4,9 @@
 
 @import "reset.scss";
 @import "sub_layout.scss";
+@import "department.scss";
+@import "community.scss";
+@import "join.scss";
 
 body {
     /* header */
@@ -237,18 +240,18 @@ body {
     /* introduce */
     #introduce {
         width: 100%;
-        padding: 150px 0;
-        background: #eee;
+        padding: 120px 0 50px;
+        background: #111;
         .inner {
             width: 1180px;
             margin: 0 auto;
             position: relative;
             h1 {
-                font: bold 36px/1 'Roboto';
-                color: #000;
+                font: bold 48px/1 'Lora';
+                color: #eee;
                 text-align: left;
                 padding: 20px 0;
-                letter-spacing: 2px;
+                letter-spacing: 3px;
             }
             hr {
                 margin-bottom: 50px;
@@ -272,7 +275,7 @@ body {
                         padding: 60px 10px 60px 80px;
                         h2{
                             font: bold 20px/1 'Arimo'; 
-                            color: #000; 
+                            color: #eee; 
                             margin-bottom: 50px;
                             letter-spacing: 2px;
                         }
@@ -287,16 +290,16 @@ body {
                             width: 120px; 
                             height: 30px; 
                             font: 15px/30px 'Arimo'; 
-                            color: #333; 
+                            color: #eee; 
                             padding: 0 20px;
-                            border: 1px solid #333; 
+                            border: 1px solid #eee; 
                             text-align: center;
                             position: absolute;
                             bottom: 50px;
                             right: 50px;
                             transition: .5s;
                             &:hover {
-                                background: #333;
+                                background: #484858;
                                 color: #fff;
                             }
                         }
@@ -318,7 +321,7 @@ body {
             }
             >p {
                 font: bold 130px/1 'Abril Fatface';
-                color: #ddd;
+                color: #111;
                 position: absolute;
                 bottom: -170px;
                 left: -130px;
@@ -348,18 +351,18 @@ body {
     /* news */
     #news {
         width: 100%; 
-        padding: 150px 0; 
-        background: #ddd;
+        padding: 120px 0; 
+        background: #111;
         .inner{
             width: 1180px; 
             margin: 0 auto; 
             position: relative;
             h1{
-                font: bold 36px/1 'Roboto';
-                color: #000;
+                font: bold 48px/1 'Lora';
+                color: #eee;
                 text-align: left;
                 padding: 20px 0;
-                letter-spacing: 2px;
+                letter-spacing: 3px;
             }
             hr {
                 margin-bottom: 100px;
@@ -406,7 +409,7 @@ body {
                             height: 50px;
                             background: rgba(0, 0, 0, 0.7);
                             font: 14px/50px 'arial';
-                            color: #fff;
+                            color: #eee;
                             text-align: center;
                             position: absolute;
                             bottom: 0;
@@ -415,7 +418,7 @@ body {
                         }
                         p {
                             font: 12px/1.2 'arial';
-                            color: #fff;
+                            color: #eee;
                             width: 80%;
                             position: absolute;
                             bottom: 20px;
@@ -435,7 +438,7 @@ body {
                             height: 100px;
                             background: rgba(0, 0, 0, 0.7);
                             font: 14px/50px 'arial';
-                            color: #fff;
+                            color: #eee;
                             text-align: center;
                             position: absolute;
                             bottom: 0;
@@ -464,22 +467,22 @@ body {
     /* model */
     #model {
         width: 100%; 
-        padding: 150px 0; 
-        background: #eee;
+        padding: 120px 0; 
+        background: #111;
         .inner {
             width: 1180px;
             margin: 0 auto;
             position: relative;
             h1{
-                font: bold 36px/1 'Roboto';
-                color: #000;
+                font: bold 48px/1 'Lora';
+                color: #eee;
                 text-align: left;
                 padding: 20px 0;
-                letter-spacing: 2px;
+                letter-spacing: 3px;
             }
             >p {
                 font: bold 130px/1 'Abril Fatface';
-                color: #ddd;
+                color: #eee;
                 position: absolute;
                 top: -190px;
                 right: -280px;
@@ -515,22 +518,22 @@ body {
                             }
                             h2 {
                                 font: bold 20px/1 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                                 margin-bottom: 20px;
                             }
                             p {
                                 font: 14px/1 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                             }
                             a {
                                 display: block;
                                 width: 100px;
                                 height: 25px;
-                                border: 1px solid #000;
+                                border: 1px solid #eee;
                                 font: 12px/25px 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                                 position: absolute;
                                 bottom: 20px;
@@ -538,19 +541,19 @@ body {
                                 transform: translateX(-50%);
                             }
                             &:hover {
-                                background: #111;
+                                background: #484858;
                                 img {
                                     filter: grayscale(0);
                                 }
                                 h2 {
-                                    color: #ccc;
+                                    color: #aaa;
                                 }
                                 p {
-                                    color: #ccc; 
+                                    color: #aaa; 
                                 }
                                 a {
-                                    color: #ccc;
-                                    border: 1px solid #ccc;
+                                    color: #aaa;
+                                    border: 1px solid #aaa;
                                 }
                             }
                         }
@@ -565,27 +568,27 @@ body {
                                 background: #eee;
                                 object-fit: cover;
                                 border: 1px solid #bbb;    
-                                margin-bottom: 20px;  
-                                filter: grayscale(0.7);                     
+                                margin-bottom: 20px;
+                                filter: grayscale(0.7);                       
                             }
                             h2 {
                                 font: bold 20px/1 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                                 margin-bottom: 20px;
                             }
                             p {
                                 font: 14px/1 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                             }
                             a {
                                 display: block;
                                 width: 100px;
                                 height: 25px;
-                                border: 1px solid #000;
+                                border: 1px solid #eee;
                                 font: 12px/25px 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                                 position: absolute;
                                 bottom: 20px;
@@ -593,19 +596,19 @@ body {
                                 transform: translateX(-50%);
                             }
                             &:hover {
-                                background: #111;
+                                background: #484858;
                                 img {
                                     filter: grayscale(0);
                                 }
                                 h2 {
-                                    color: #ccc;
+                                    color: #aaa;
                                 }
                                 p {
-                                    color: #ccc; 
+                                    color: #aaa; 
                                 }
                                 a {
-                                    color: #ccc;
-                                    border: 1px solid #ccc;
+                                    color: #aaa;
+                                    border: 1px solid #aaa;
                                 }
                             }
                         }
@@ -620,27 +623,27 @@ body {
                                 background: #eee;
                                 object-fit: cover;
                                 border: 1px solid #bbb;    
-                                margin-bottom: 20px;    
-                                filter: grayscale(0.7);                   
+                                margin-bottom: 20px;
+                                filter: grayscale(0.7);                       
                             }
                             h2 {
                                 font: bold 20px/1 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                                 margin-bottom: 20px;
                             }
                             p {
                                 font: 14px/1 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                             }
                             a {
                                 display: block;
                                 width: 100px;
                                 height: 25px;
-                                border: 1px solid #000;
+                                border: 1px solid #eee;
                                 font: 12px/25px 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                                 position: absolute;
                                 bottom: 20px;
@@ -648,19 +651,19 @@ body {
                                 transform: translateX(-50%);
                             }
                             &:hover {
-                                background: #111;
+                                background: #484858;
                                 img {
                                     filter: grayscale(0);
                                 }
                                 h2 {
-                                    color: #ccc;
+                                    color: #aaa;
                                 }
                                 p {
-                                    color: #ccc; 
+                                    color: #aaa; 
                                 }
                                 a {
-                                    color: #ccc;
-                                    border: 1px solid #ccc;
+                                    color: #aaa;
+                                    border: 1px solid #aaa;
                                 }
                             }
                         }
@@ -675,27 +678,27 @@ body {
                                 background: #eee;
                                 object-fit: cover;
                                 border: 1px solid #bbb;    
-                                margin-bottom: 20px;  
-                                filter: grayscale(0.7);                     
+                                margin-bottom: 20px;
+                                filter: grayscale(0.7);                       
                             }
                             h2 {
                                 font: bold 20px/1 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                                 margin-bottom: 20px;
                             }
                             p {
                                 font: 14px/1 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                             }
                             a {
                                 display: block;
                                 width: 100px;
                                 height: 25px;
-                                border: 1px solid #000;
+                                border: 1px solid #eee;
                                 font: 12px/25px 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                                 position: absolute;
                                 bottom: 20px;
@@ -703,19 +706,19 @@ body {
                                 transform: translateX(-50%);
                             }
                             &:hover {
-                                background: #111;
+                                background: #484858;
                                 img {
                                     filter: grayscale(0);
                                 }
                                 h2 {
-                                    color: #ccc;
+                                    color: #aaa;
                                 }
                                 p {
-                                    color: #ccc; 
+                                    color: #aaa; 
                                 }
                                 a {
-                                    color: #ccc;
-                                    border: 1px solid #ccc;
+                                    color: #aaa;
+                                    border: 1px solid #aaa;
                                 }
                             }
                         }
@@ -730,27 +733,27 @@ body {
                                 background: #eee;
                                 object-fit: cover;
                                 border: 1px solid #bbb;    
-                                margin-bottom: 20px;   
-                                filter: grayscale(0.7);                    
+                                margin-bottom: 20px;
+                                filter: grayscale(0.7);                       
                             }
                             h2 {
                                 font: bold 20px/1 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                                 margin-bottom: 20px;
                             }
                             p {
                                 font: 14px/1 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                             }
                             a {
                                 display: block;
                                 width: 100px;
                                 height: 25px;
-                                border: 1px solid #000;
+                                border: 1px solid #eee;
                                 font: 12px/25px 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                                 position: absolute;
                                 bottom: 20px;
@@ -758,19 +761,19 @@ body {
                                 transform: translateX(-50%);
                             }
                             &:hover {
-                                background: #111;
+                                background: #484858;
                                 img {
                                     filter: grayscale(0);
                                 }
                                 h2 {
-                                    color: #ccc;
+                                    color: #aaa;
                                 }
                                 p {
-                                    color: #ccc; 
+                                    color: #aaa; 
                                 }
                                 a {
-                                    color: #ccc;
-                                    border: 1px solid #ccc;
+                                    color: #aaa;
+                                    border: 1px solid #aaa;
                                 }
                             }
                         }
@@ -785,27 +788,27 @@ body {
                                 background: #eee;
                                 object-fit: cover;
                                 border: 1px solid #bbb;    
-                                margin-bottom: 20px;     
-                                filter: grayscale(0.7);                  
+                                margin-bottom: 20px;
+                                filter: grayscale(0.7);                       
                             }
                             h2 {
                                 font: bold 20px/1 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                                 margin-bottom: 20px;
                             }
                             p {
                                 font: 14px/1 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                             }
                             a {
                                 display: block;
                                 width: 100px;
                                 height: 25px;
-                                border: 1px solid #000;
+                                border: 1px solid #eee;
                                 font: 12px/25px 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                                 position: absolute;
                                 bottom: 20px;
@@ -813,19 +816,19 @@ body {
                                 transform: translateX(-50%);
                             }
                             &:hover {
-                                background: #111;
+                                background: #484858;
                                 img {
                                     filter: grayscale(0);
                                 }
                                 h2 {
-                                    color: #ccc;
+                                    color: #aaa;
                                 }
                                 p {
-                                    color: #ccc; 
+                                    color: #aaa; 
                                 }
                                 a {
-                                    color: #ccc;
-                                    border: 1px solid #ccc;
+                                    color: #aaa;
+                                    border: 1px solid #aaa;
                                 }
                             }
                         }
@@ -840,27 +843,27 @@ body {
                                 background: #eee;
                                 object-fit: cover;
                                 border: 1px solid #bbb;    
-                                margin-bottom: 20px;    
-                                filter: grayscale(0.7);                   
+                                margin-bottom: 20px;
+                                filter: grayscale(0.7);                       
                             }
                             h2 {
                                 font: bold 20px/1 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                                 margin-bottom: 20px;
                             }
                             p {
                                 font: 14px/1 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                             }
                             a {
                                 display: block;
                                 width: 100px;
                                 height: 25px;
-                                border: 1px solid #000;
+                                border: 1px solid #eee;
                                 font: 12px/25px 'arial';
-                                color: #000;
+                                color: #eee;
                                 text-align: center;
                                 position: absolute;
                                 bottom: 20px;
@@ -868,19 +871,19 @@ body {
                                 transform: translateX(-50%);
                             }
                             &:hover {
-                                background: #111;
+                                background: #484858;
                                 img {
                                     filter: grayscale(0);
                                 }
                                 h2 {
-                                    color: #ccc;
+                                    color: #aaa;
                                 }
                                 p {
-                                    color: #ccc; 
+                                    color: #aaa; 
                                 }
                                 a {
-                                    color: #ccc;
-                                    border: 1px solid #ccc;
+                                    color: #aaa;
+                                    border: 1px solid #aaa;
                                 }
                             }
                         }
@@ -898,19 +901,19 @@ body {
     /* comments */
     #comments {
         width: 100%;
-        padding: 150px 0 200px;
-        background: #ddd;
+        padding: 120px 0 200px;
+        background: #111;
         .inner {
             width: 1180px;
             margin: 0 auto;
             position: relative;
         }
         h1{
-            font: bold 36px/1 'Roboto';
-            color: #000;
+            font: bold 48px/1 'Lora';
+            color: #eee;
             text-align: left;
             padding: 20px 0;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
         }
         hr {
             margin-bottom: 100px;
@@ -934,7 +937,7 @@ body {
                     height: 100px;
                     margin-right: 20px;
                     margin-bottom: 20px;
-                    border: 1px solid #000;
+                    border: 1px solid #eee;
                     padding: 20px;
                     transition: .5s;
                     cursor: pointer;
@@ -946,20 +949,20 @@ body {
                     a {
                         display: block;
                         font: bold 20px/1 'arial';
-                        color: #000;
+                        color: #eee;
                         margin-bottom: 20px;
                     }
                     p {
                         font: 14px/1.2 'arial';
-                        color: #000;
+                        color: #eee;
                     }
                     &:hover {
-                        background: #333;
+                        background: #484858;
                         a {
-                            color: #fff;
+                            color: #ddd;
                         }
                         p {
-                            color: #fff;
+                            color: #ddd;
                         }
                     }
                 }
@@ -1030,7 +1033,7 @@ body {
             transition: .5s;
             &.on {
                 height: 60px;
-                background: #333;
+                background: #484858;
             }
         }
     }

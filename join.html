@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <script src="https://kit.fontawesome.com/4c092d1718.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <header id="header_sub">
+        <div class="inner">
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>            
+            <h1><a href="index.html">Mercedes-Benz</a></h1>
+            <nav class="menuWeb">
+                <ul id="gnb">
+                    <li><a href="department.html">DEPARTMENT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="youtube.html">YOUTUBE</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                </ul>
+
+                <ul class="util">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="btnCall">
+                <span>메뉴호출</span>
+            </a>
+
+            <nav class="menuMo">
+                <h1>
+                    <a href="index.html">Benz</a>
+                </h1>
+                <ul id="gnbMo">
+                    <li><a href="sub_page.html">DEPARTMENT</a></li>
+                    <li><a href="youtube.html">YOUTUBE</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content" id="join">
+        <div class="sub_visual"></div>
+        <div class="inner">
+            <h1>JOIN US</h1>
+            <hr size="3px" color="#eee" width="65%" noshade>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit voluptatem porro maiores deserunt delectus illum sapiente pariatur neque maxime a?</p>
+
+            <form action="result.html" method="get">
+                <fieldset>
+                    <legend class="hidden">회원가입양식폼</legend>
+                    
+                    <h2><label for="terms">Terms & policy</label></h2>
+                    <textarea name="terms" id="terms" cols="50" rows="20">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, suscipit dolorem. Reiciendis accusantium praesentium officia animi nisi exercitationem porro magnam? Aut animi veniam, dolorem molestias unde blanditiis fugiat voluptatem dolores!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, suscipit dolorem. Reiciendis accusantium praesentium officia animi nisi exercitationem porro magnam? Aut animi veniam, dolorem molestias unde blanditiis fugiat voluptatem dolores!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, suscipit dolorem. Reiciendis accusantium praesentium officia animi nisi exercitationem porro magnam? Aut animi veniam, dolorem molestias unde blanditiis fugiat voluptatem dolores!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, suscipit dolorem. Reiciendis accusantium praesentium officia animi nisi exercitationem porro magnam? Aut animi veniam, dolorem molestias unde blanditiis fugiat voluptatem dolores!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, suscipit dolorem. Reiciendis accusantium praesentium officia animi nisi exercitationem porro magnam? Aut animi veniam, dolorem molestias unde blanditiis fugiat voluptatem dolores!
+                    </textarea>
+                    <div class="agreement">
+                        <input type="checkbox" name="agree" id="agree">
+                        <label for="agree">I agree to the terms and conditions</label>
+                    </div>
+
+                    <h2>Input Information</h2>
+                    <table>
+                        <caption class="hidden">회원정보 입력양식 테이블</caption>
+
+                        <tr>
+                            <th scope="row"><label for="id">USER ID</label></th>
+                            <td>
+                                <input type="text" name="id" id="id"
+                                placeholder="Please Enter ID" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="pwd">PASSWORD</label></th>
+                            <td>
+                                <input type="password" name="password" id="pwd"
+                                placeholder="Please Enter Password" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="pwd2">RE PASSWORD</label></th>
+                            <td>
+                                <input type="password" name="password2" id="pwd2"
+                                placeholder="Please Enter Re Password" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">INTEREST</th>
+                            <td>
+                                <label for="sedan">
+                                    <input type="checkbox" name="interest" id="sedan" value="sedan">Sedan
+                                </label>
+                                <label for="coupe">
+                                    <input type="checkbox" name="interest" id="coupe" value="coupe">Coupe
+                                </label>
+                                <label for="SUV">
+                                    <input type="checkbox" name="interest" id="SUV" value="SUV">SUV
+                                </label>
+                                <label for="AMG">
+                                    <input type="checkbox" name="interest" id="AMG" value="AMG">AMG
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">GENDER</th>
+                            <td>
+                                <label for="male">
+                                    <input type="radio" name="gender" id="male" value="male">MALE
+                                </label>
+                                <label for="female">
+                                    <input type="radio" name="gender" id="female" value="female">FEMALE
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="email">E-MAIL</label></th>
+                            <td>
+                                <input type="text" name="email" id="email" placeholder="Please Enter E-mail">
+                                <select name="company" id="company">
+                                    <option value="naver">@naver.com</option>
+                                    <option value="nate">@nate.com</option>
+                                    <option value="hanmail">@hanmail.net</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="comments">COMMENTS</label></th>
+                            <td>
+                                <textarea name="comments" id="comments" placeholder="Please Enter Comments" cols="30" rows="10"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                <input type="reset" value="CANCEL">
+                                <input type="submit" value="SUBMIT">
+                            </th>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer_sub">
+        <div class="inner">
+            <h1>Mercedes-Benz</h1>
+            <ul>
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Customer</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <address>
+                address: Lorem ipsum dolor sit amet consectetur adipisicing elit. A, earum.<br/>
+                Tel : +82 -123-1234-1234 Fax : +82 -123-1234-1234
+            </address>
+
+            <p>Copyright &copy; 2022 Mercedes-Benz ALL Right reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
