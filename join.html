@@ -8,7 +8,7 @@
     <title>Join</title>
     <script src="https://kit.fontawesome.com/4c092d1718.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/main.js"></script>
+    <script defer src="js/validation.js"></script>
 </head>
 
 <body>
@@ -58,18 +58,12 @@
             <hr size="3px" color="#eee" width="65%" noshade>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit voluptatem porro maiores deserunt delectus illum sapiente pariatur neque maxime a?</p>
 
-            <form action="result.html" method="get">
+            <form action="result.html" method="get" id="joinForm">
                 <fieldset>
                     <legend class="hidden">회원가입양식폼</legend>
                     
                     <h2><label for="terms">Terms & policy</label></h2>
-                    <textarea name="terms" id="terms" cols="50" rows="20">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, suscipit dolorem. Reiciendis accusantium praesentium officia animi nisi exercitationem porro magnam? Aut animi veniam, dolorem molestias unde blanditiis fugiat voluptatem dolores!
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, suscipit dolorem. Reiciendis accusantium praesentium officia animi nisi exercitationem porro magnam? Aut animi veniam, dolorem molestias unde blanditiis fugiat voluptatem dolores!
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, suscipit dolorem. Reiciendis accusantium praesentium officia animi nisi exercitationem porro magnam? Aut animi veniam, dolorem molestias unde blanditiis fugiat voluptatem dolores!
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, suscipit dolorem. Reiciendis accusantium praesentium officia animi nisi exercitationem porro magnam? Aut animi veniam, dolorem molestias unde blanditiis fugiat voluptatem dolores!
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, suscipit dolorem. Reiciendis accusantium praesentium officia animi nisi exercitationem porro magnam? Aut animi veniam, dolorem molestias unde blanditiis fugiat voluptatem dolores!
-                    </textarea>
+                    <textarea name="terms" id="terms" cols="100" rows="20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque placeat odio doloribus et corporis? A quia cumque assumenda accusantium, aspernatur nulla eos! Hic ducimus labore quibusdam beatae pariatur nulla molestiae!Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque placeat odio doloribus et corporis? A quia cumque assumenda accusantium, aspernatur nulla eos! Hic ducimus labore quibusdam beatae pariatur nulla molestiae!Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque placeat odio doloribus et corporis? A quia cumque assumenda accusantium, aspernatur nulla eos! Hic ducimus labore quibusdam beatae pariatur nulla molestiae!Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque placeat odio doloribus et corporis? A quia cumque assumenda accusantium, aspernatur nulla eos! Hic ducimus labore quibusdam beatae pariatur nulla molestiae!Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque placeat odio doloribus et corporis? A quia cumque assumenda accusantium, aspernatur nulla eos! Hic ducimus labore quibusdam beatae pariatur nulla molestiae!Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque placeat odio doloribus et corporis? A quia cumque assumenda accusantium, aspernatur nulla eos! Hic ducimus labore quibusdam beatae pariatur nulla molestiae!Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque placeat odio doloribus et corporis? A quia cumque assumenda accusantium, aspernatur nulla eos! Hic ducimus labore quibusdam beatae pariatur nulla molestiae!Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque placeat odio doloribus et corporis? A quia cumque assumenda accusantium, aspernatur nulla eos! Hic ducimus labore quibusdam beatae pariatur nulla molestiae!Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque placeat odio doloribus et corporis? A quia cumque assumenda accusantium, aspernatur nulla eos! Hic ducimus labore quibusdam beatae pariatur nulla molestiae!</textarea>
                     <div class="agreement">
                         <input type="checkbox" name="agree" id="agree">
                         <label for="agree">I agree to the terms and conditions</label>
@@ -83,21 +77,21 @@
                             <th scope="row"><label for="id">USER ID</label></th>
                             <td>
                                 <input type="text" name="id" id="id"
-                                placeholder="Please Enter ID" required>
+                                placeholder="Please Enter ID">
                             </td>
                         </tr>
                         <tr>
                             <th scope="row"><label for="pwd">PASSWORD</label></th>
                             <td>
-                                <input type="password" name="password" id="pwd"
-                                placeholder="Please Enter Password" required>
+                                <input type="password" name="password1" id="pwd"
+                                placeholder="Please Enter Password">
                             </td>
                         </tr>
                         <tr>
                             <th scope="row"><label for="pwd2">RE PASSWORD</label></th>
                             <td>
                                 <input type="password" name="password2" id="pwd2"
-                                placeholder="Please Enter Re Password" required>
+                                placeholder="Please Enter Re Password">
                             </td>
                         </tr>
                         <tr>
@@ -114,6 +108,9 @@
                                 </label>
                                 <label for="AMG">
                                     <input type="checkbox" name="interest" id="AMG" value="AMG">AMG
+                                </label>
+                                <label for="EQC">
+                                    <input type="checkbox" name="interest" id="EQC" value="EQC">EQC
                                 </label>
                             </td>
                         </tr>
@@ -132,7 +129,8 @@
                             <th scope="row"><label for="email">E-MAIL</label></th>
                             <td>
                                 <input type="text" name="email" id="email" placeholder="Please Enter E-mail">
-                                <select name="company" id="company">
+                                <select name="emails" id="emails">
+                                    <option value="basic">@email-address</option>
                                     <option value="naver">@naver.com</option>
                                     <option value="nate">@nate.com</option>
                                     <option value="hanmail">@hanmail.net</option>
@@ -142,13 +140,14 @@
                         <tr>
                             <th scope="row"><label for="comments">COMMENTS</label></th>
                             <td>
-                                <textarea name="comments" id="comments" placeholder="Please Enter Comments" cols="30" rows="10"></textarea>
+                                <textarea name="comments" id="comments" cols="10" rows="8"></textarea>
                             </td>
                         </tr>
                         <tr>
                             <th colspan="2">
-                                <input type="reset" value="CANCEL">
-                                <input type="submit" value="SUBMIT">
+                                <input type="reset" value="CANCEL" id="cancel">
+                                <input type="submit" value="SUBMIT"
+                                id="submit">
                             </th>
                         </tr>
                     </table>
