@@ -668,6 +668,208 @@ table {
   margin-top: 10px;
 }
 
+#location {
+  width: 100%;
+  padding: 200px 0;
+  background: #111;
+}
+#location .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+#location .inner h1 {
+  font: bold 60px/1 "Lora";
+  color: #eee;
+  margin-bottom: 50px;
+}
+#location .inner > p {
+  font: 20px/1.2 "arial";
+  color: #eee;
+  padding: 30px 20vw 20px 15vw;
+}
+#location .inner .traffic {
+  float: left;
+  margin-top: 170px;
+  margin-bottom: 10px;
+  position: relative;
+}
+#location .inner .traffic li {
+  float: left;
+  margin-right: 10px;
+  color: #ccc;
+  font-size: 20px;
+}
+#location .inner .traffic li a {
+  display: block;
+  width: 30px;
+  height: 24px;
+  background: #111;
+  font: bold 12px/24px "맑은 고딕";
+  color: #ccc;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-40%);
+}
+#location .inner .traffic li.on a {
+  background: #eee;
+  color: #333;
+}
+#location .inner #map {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+  filter: grayscale(0.7);
+}
+#location .inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#location .inner .branch {
+  float: left;
+  width: 100%;
+}
+#location .inner .branch li {
+  float: left;
+  margin-right: 2%;
+  width: 32%;
+}
+#location .inner .branch li a {
+  display: block;
+  background: #111;
+  margin-top: 10px;
+  border-bottom: 1px solid #aaa;
+  padding: 10px 30px;
+}
+#location .inner .branch li a h2 {
+  font: bold 18px/1 "맑은 고딕";
+  color: #ccc;
+  text-align: left;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+#location .inner .branch li a p {
+  font: 12px/1 "arial";
+  color: #ccc;
+  text-align: left;
+  padding: 5px;
+}
+#location .inner .branch li.on a {
+  background: #484858;
+  color: #333;
+}
+#location .inner .branch li:nth-of-type(3) {
+  margin-right: 0;
+}
+
+#youtube {
+  width: 100%;
+  padding: 200px 0;
+  background: #111;
+}
+#youtube .inner {
+  width: 1180px;
+  height: 2500px;
+  margin: 0 auto;
+  position: relative;
+}
+#youtube .inner h1 {
+  font: bold 60px/1 "Lora";
+  color: #eee;
+  margin-bottom: 50px;
+}
+#youtube .inner > p {
+  font: 20px/1.2 "arial";
+  color: #eee;
+  padding: 30px 20vw 20px 15vw;
+}
+#youtube .inner .vidList {
+  width: 100%;
+  margin-top: 170px;
+}
+#youtube .inner .vidList:active {
+  content: "";
+  display: block;
+  clear: both;
+}
+#youtube .inner .vidList .wrap {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+#youtube .inner .vidList .wrap:last-child {
+  border-bottom: 1px solid #ccc;
+}
+#youtube .inner .vidList .wrap article {
+  width: 32%;
+  height: 220px;
+  margin-right: 2%;
+  padding: 15px;
+  margin-bottom: 20px;
+  float: left;
+  position: relative;
+}
+#youtube .inner .vidList .wrap article:nth-of-type(1) h2 {
+  font: bold 20px/1.2 "arial";
+  color: #ccc;
+  margin-bottom: 15px;
+}
+#youtube .inner .vidList .wrap article:nth-of-type(2) p {
+  font: 13px/1.2 "arial";
+  color: #ccc;
+  margin-bottom: 20px;
+}
+#youtube .inner .vidList .wrap article:nth-of-type(2) span {
+  font: 13px/1.2 "arial";
+  color: #ccc;
+  position: absolute;
+  bottom: 15px;
+}
+#youtube .inner .vidList .wrap article:nth-of-type(3n) {
+  margin-right: 0;
+}
+#youtube .inner .vidList .wrap article:nth-of-type(3n) .pic {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(0.8);
+  transition: 0.5s;
+}
+#youtube .inner .vidList .wrap article:nth-of-type(3n) .pic:hover {
+  filter: grayscale(0);
+}
+#youtube .inner .vidList .wrap article:nth-of-type(3n) .pic > img {
+  width: 100%;
+  height: 100%;
+}
+#youtube .inner figure.pop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#youtube .inner figure.pop .btnClose {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
 body {
   /* header */
   /* visual */

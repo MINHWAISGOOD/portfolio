@@ -1,0 +1,96 @@
+#location {
+    width: 100%;
+    padding: 200px 0;
+    background: #111;
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+        position: relative;
+        h1 {
+            font: bold 60px/1 'Lora';
+            color: #eee;
+            margin-bottom: 50px;
+        }
+        >p {
+            font: 20px/1.2 'arial';
+            color: #eee;
+            padding: 30px 20vw 20px 15vw;
+        }
+        .traffic {
+            float: left;
+            margin-top: 170px;
+            margin-bottom: 10px;
+            position: relative;
+            li {
+                float: left; 
+                margin-right: 10px;
+                color: #ccc;
+                font-size: 20px;
+                a {
+                    display: block;
+                    width: 30px; 
+                    height: 24px; 
+                    background: #111;
+                    font: bold 12px/24px '맑은 고딕';
+                    color: #ccc; 
+                    text-align: center;
+                    border: 1px solid #ccc;
+                    border-radius: 10px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-40%);
+                }
+                &.on a {
+                    background: #eee; color: #333;
+                }
+            }
+        }
+        #map {
+            width: 100%; 
+            height: 500px; 
+            border: 1px solid #000;
+            margin-bottom: 20px;   
+            filter: grayscale(0.7);         
+        }
+        &::after {
+            content: ''; 
+            display: block; 
+            clear: both;}
+        .branch {
+            float: left;
+            width: 100%;
+            li {
+                float: left; 
+                margin-right: 2%;
+                width: 32%;
+                a {
+                    display: block;                                         
+                    background: #111;
+                    margin-top: 10px;
+                    border-bottom: 1px solid #aaa;
+                    padding: 10px 30px;
+                    h2 {
+                        font: bold 18px/1 '맑은 고딕';
+                        color: #ccc; 
+                        text-align: left;
+                        padding: 5px;
+                        margin-bottom: 5px;
+                    }
+                    p {
+                        font: 12px/1 'arial';
+                        color: #ccc;
+                        text-align: left;
+                        padding: 5px;
+                    }
+                }
+                &.on a {
+                    background: #484858; 
+                    color: #333;
+                }
+                &:nth-of-type(3) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
