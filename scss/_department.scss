@@ -142,3 +142,103 @@
         }
     }
 }
+
+
+@media screen and (max-width:1179px) {
+    #department {
+        padding: 200px 20px;
+        .inner {
+            width: 100%;  
+            #identity {
+                .wrap {
+                    article {
+                        width: 32%;
+                        margin-right: 2%;
+                        &:nth-of-type(1) {
+                            width: 0;
+                            margin-right: 0;
+                        }
+                        &:nth-of-type(4) {
+                            margin-right: 0;
+                        }                    
+                    }
+                }
+            }
+            #people {    
+                .wrap {
+                    article {
+                        width: 32%;
+                        margin-right: 2%;
+                        &:nth-of-type(1), &:nth-of-type(5) {
+                            width: 0;
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+
+@media screen and (max-width:539px) {
+    #department {
+        padding: 200px 30px;
+        .inner {   
+            h1 {
+                font: bold 40px/1 'Lora';
+            }
+            >p {
+                font: 12px/1.2 'arial';
+            }
+            #identity {
+                h2 {
+                    font: 30px/1 'Lora';
+                }
+                .wrap {
+                    article {
+                        width: 100%;
+                        margin-right: 0;
+                        
+                        &:nth-of-type(4) {
+                            margin-right: 0;
+                        }
+                        .pic {
+                            height: 250px;
+                            p {
+                                position: absolute;
+                                bottom: -120px;
+                                left: 0;
+                            }
+                        }                     
+                    }
+                }
+            }
+            #people {
+                h2 {
+                    font: 30px/1 'Lora';
+                }    
+                .wrap {
+                    article {
+                        width: 100%;
+                        margin-right: 0;
+                        .pic2 {
+                            height: 250px;
+                            h3 { 
+                                font: 20px/1 'arial'; 
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+                            p {
+                                font: 14px/1 'arial';
+                                bottom: -70px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}

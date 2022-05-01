@@ -424,6 +424,83 @@ table {
   filter: grayscale(0);
 }
 
+@media screen and (max-width: 1179px) {
+  #department {
+    padding: 200px 20px;
+  }
+  #department .inner {
+    width: 100%;
+  }
+  #department .inner #identity .wrap article {
+    width: 32%;
+    margin-right: 2%;
+  }
+  #department .inner #identity .wrap article:nth-of-type(1) {
+    width: 0;
+    margin-right: 0;
+  }
+  #department .inner #identity .wrap article:nth-of-type(4) {
+    margin-right: 0;
+  }
+  #department .inner #people .wrap article {
+    width: 32%;
+    margin-right: 2%;
+  }
+  #department .inner #people .wrap article:nth-of-type(1), #department .inner #people .wrap article:nth-of-type(5) {
+    width: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 539px) {
+  #department {
+    padding: 200px 30px;
+  }
+  #department .inner h1 {
+    font: bold 40px/1 "Lora";
+  }
+  #department .inner > p {
+    font: 12px/1.2 "arial";
+  }
+  #department .inner #identity h2 {
+    font: 30px/1 "Lora";
+  }
+  #department .inner #identity .wrap article {
+    width: 100%;
+    margin-right: 0;
+  }
+  #department .inner #identity .wrap article:nth-of-type(4) {
+    margin-right: 0;
+  }
+  #department .inner #identity .wrap article .pic {
+    height: 250px;
+  }
+  #department .inner #identity .wrap article .pic p {
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+  }
+  #department .inner #people h2 {
+    font: 30px/1 "Lora";
+  }
+  #department .inner #people .wrap article {
+    width: 100%;
+    margin-right: 0;
+  }
+  #department .inner #people .wrap article .pic2 {
+    height: 250px;
+  }
+  #department .inner #people .wrap article .pic2 h3 {
+    font: 20px/1 "arial";
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #department .inner #people .wrap article .pic2 p {
+    font: 14px/1 "arial";
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 #community {
   width: 100%;
   padding: 200px 0;
@@ -549,6 +626,43 @@ table {
   background: #484858;
 }
 
+@media screen and (max-width: 1179px) {
+  #community {
+    padding: 200px 20px;
+  }
+  #community .inner {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 539px) {
+  #community {
+    padding: 200px 30px;
+  }
+  #community .inner h1 {
+    font: bold 40px/1 "Lora";
+  }
+  #community .inner > p {
+    font: 12px/1.2 "arial";
+  }
+  #community .inner table thead tr th {
+    font: 15px/1 "arial";
+  }
+  #community .inner table tbody .title td {
+    padding: 7px;
+    font: 12px/1 "arial";
+  }
+  #community .inner table tbody .title .tableTitle {
+    line-height: 1.2;
+  }
+  #community .inner table tbody .content td {
+    padding: 10px 10px;
+    line-height: 1.2;
+    font-size: 12px;
+  }
+  #community .inner .pagination .numbers a:nth-of-type(6), #community .inner .pagination .numbers a:nth-of-type(7), #community .inner .pagination .numbers a:nth-of-type(8), #community .inner .pagination .numbers a:nth-of-type(9), #community .inner .pagination .numbers a:nth-of-type(10) {
+    display: none;
+  }
+}
 #join {
   width: 100%;
   padding: 200px 0;
@@ -675,6 +789,62 @@ table {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 1179px) {
+  #join {
+    padding: 200px 20px;
+  }
+  #join .inner {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 539px) {
+  #join {
+    padding: 200px 30px;
+  }
+  #join .inner h1 {
+    font: bold 40px/1 "Lora";
+  }
+  #join .inner > p {
+    font: 12px/1.2 "arial";
+  }
+  #join .inner #terms {
+    height: 150px;
+    padding: 10px;
+    font: 12px/1.3 "arial";
+  }
+  #join .inner table th {
+    font: bold 12px/1 "arial";
+    padding: 5px 10px;
+  }
+  #join .inner table th input[type=submit], #join .inner table th input[type=reset] {
+    width: 100px;
+    height: 30px;
+    font: bold 12px/1 "arial";
+    margin: 10px 10px;
+  }
+  #join .inner table td {
+    padding: 10px 20px;
+  }
+  #join .inner table td input[type=text], #join .inner table td input[type=password] {
+    width: 90%;
+  }
+  #join .inner table td input[type=checkbox], #join .inner table td input[type=radio] {
+    margin-right: 5px;
+  }
+  #join .inner table td label {
+    margin-right: 40px;
+    font-size: 12px;
+  }
+  #join .inner table td select#emails {
+    width: 90%;
+  }
+  #join .inner table td textarea#comments {
+    width: 90%;
+  }
+  #join .inner table td p {
+    font: 8px/1 "맑은 고딕";
+  }
+}
 #location {
   width: 100%;
   padding: 200px 0;
@@ -742,9 +912,9 @@ table {
   width: 100%;
 }
 #location .inner .branch li {
-  float: left;
-  margin-right: 2%;
   width: 32%;
+  margin-right: 2%;
+  float: left;
 }
 #location .inner .branch li a {
   display: block;
@@ -772,6 +942,29 @@ table {
   margin-right: 0;
 }
 
+@media screen and (max-width: 1179px) {
+  #location {
+    padding: 200px 20px;
+  }
+  #location .inner {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 539px) {
+  #location {
+    padding: 200px 30px;
+  }
+  #location .inner h1 {
+    font: bold 40px/1 "Lora";
+  }
+  #location .inner > p {
+    font: 12px/1.2 "arial";
+  }
+  #location .inner .branch li {
+    width: 100%;
+    margin-right: 0;
+  }
+}
 #gallery {
   width: 100%;
   padding: 200px 0;
@@ -799,7 +992,7 @@ table {
   text-align: right;
   margin-top: 170px;
 }
-#gallery .inner #searchBox l #search {
+#gallery .inner #searchBox #search {
   width: 200px;
   height: 20px;
   background: #ddd;
@@ -822,14 +1015,6 @@ table {
   width: 100%;
   padding: 20px;
 }
-#gallery .inner #wrap > p {
-  margin-top: 150px;
-  padding: 100px;
-  font: bold 30px/1 "arial";
-  color: #ddd;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-}
 #gallery .inner #wrap .loading {
   width: 100px;
   position: fixed;
@@ -840,6 +1025,12 @@ table {
 }
 #gallery .inner #wrap .loading.off {
   opacity: 0;
+}
+#gallery .inner #wrap > p {
+  font: 30px/1 "arial";
+  color: #ddd;
+  text-align: center;
+  padding: 100px 0;
 }
 #gallery .inner #wrap #list {
   width: 100%;
@@ -915,6 +1106,58 @@ aside .close {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1179px) {
+  #gallery {
+    padding: 200px 20px;
+  }
+  #gallery .inner {
+    width: 100%;
+  }
+  #gallery .inner #wrap {
+    padding: 10px;
+  }
+
+  aside .close {
+    top: 30px;
+    right: 30px;
+  }
+}
+@media screen and (max-width: 539px) {
+  #gallery {
+    padding: 200px 30px;
+  }
+  #gallery .inner h1 {
+    font: bold 40px/1 "Lora";
+  }
+  #gallery .inner > p {
+    font: 12px/1.2 "arial";
+  }
+  #gallery .inner #searchBox {
+    padding: 5px 0;
+    margin-bottom: 20px;
+  }
+  #gallery .inner #searchBox #search {
+    width: 100px;
+  }
+  #gallery .inner #wrap {
+    padding: 0;
+  }
+  #gallery .inner #wrap #list li {
+    width: 50%;
+  }
+  #gallery .inner #wrap #list li div {
+    height: 180px;
+  }
+
+  aside .con {
+    width: 100%;
+    height: 70%;
+  }
+  aside .close {
+    top: 35px;
+    right: 20px;
+  }
+}
 #youtube {
   width: 100%;
   padding: 200px 0;
@@ -1018,6 +1261,56 @@ aside .close {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1179px) {
+  #youtube {
+    padding: 200px 20px;
+  }
+  #youtube .inner {
+    width: 100%;
+  }
+  #youtube .inner .vidList .wrap article:nth-of-type(1) h2 {
+    font: bold 18px/1.2 "arial";
+  }
+  #youtube .inner .vidList .wrap article:nth-of-type(2) p {
+    font: 12px/1.2 "arial";
+  }
+  #youtube .inner .vidList .wrap article:nth-of-type(2) span {
+    font: 12px/1.2 "arial";
+  }
+}
+@media screen and (max-width: 539px) {
+  #youtube {
+    padding: 200px 30px;
+  }
+  #youtube .inner h1 {
+    font: bold 40px/1 "Lora";
+  }
+  #youtube .inner > p {
+    font: 12px/1.2 "arial";
+  }
+  #youtube .inner .vidList .wrap article {
+    width: 49%;
+    margin-right: 2%;
+  }
+  #youtube .inner .vidList .wrap article:nth-of-type(1) h2 {
+    font: bold 16px/1.2 "arial";
+  }
+  #youtube .inner .vidList .wrap article:nth-of-type(2) {
+    width: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+  #youtube .inner .vidList .wrap article:nth-of-type(2) p {
+    display: none;
+  }
+  #youtube .inner .vidList .wrap article:nth-of-type(2) span {
+    display: none;
+  }
+  #youtube .inner figure.pop .btnClose {
+    top: 30px;
+    right: 30px;
+  }
+}
 body {
   /* header */
   /* visual */

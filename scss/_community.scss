@@ -124,3 +124,64 @@
         }
     }
 }
+
+
+@media screen and (max-width:1179px) {
+    #community {
+        padding: 200px 20px;
+        .inner {
+            width: 100%;
+        }
+    }    
+}
+
+
+@media screen and (max-width:539px) {
+    #community {
+        padding: 200px 30px;
+        .inner {
+            h1 {
+                font: bold 40px/1 'Lora';
+            }
+            >p {
+                font: 12px/1.2 'arial';
+            }
+            table {
+                thead {
+                    tr {
+                        th {
+                            font: 15px/1 'arial';     
+                        }
+                    }
+                }
+                tbody {
+                    .title {
+                        td {
+                            padding: 7px; 
+                            font: 12px/1 'arial';
+                        }
+                        .tableTitle { 
+                            line-height: 1.2;
+                        }
+                    }
+                    .content {
+                        td {
+                            padding: 10px 10px;
+                            line-height: 1.2;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .pagination {
+                .numbers {
+                    a {
+                        &:nth-of-type(6), &:nth-of-type(7), &:nth-of-type(8), &:nth-of-type(9), &:nth-of-type(10) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

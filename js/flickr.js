@@ -23,7 +23,7 @@ btnSearch.addEventListener("click", e=>{
     if(tag !=""){
         callData(url); 
     }else {
-        console.log("검색어를 입력하세요"); 
+        console.log("Please enter a search term"); 
         frame.innerHTML =""; 
         frame.classList.remove("on");
         frame.style.height = "auto"; 
@@ -32,7 +32,7 @@ btnSearch.addEventListener("click", e=>{
         if(errMsgs.length >0) frame.parentElement.querySelector("p").remove(); 
 
         const errMsg = document.createElement("p"); 
-        errMsg.append("검색어를 입력하세요"); 
+        errMsg.append("Please enter a search term."); 
         frame.parentElement.append(errMsg);
     }
 })
@@ -47,7 +47,7 @@ input.addEventListener("keyup", e=>{
         if(tag !=""){
             callData(url); 
         }else{
-            console.log("검색어를 입력하세요"); 
+            console.log("Please enter a search term"); 
             frame.innerHTML =""; 
             frame.classList.remove("on");
             frame.style.height = "auto"; 
@@ -56,7 +56,7 @@ input.addEventListener("keyup", e=>{
             if(errMsgs.length >0) frame.parentElement.querySelector("p").remove(); 
     
             const errMsg = document.createElement("p"); 
-            errMsg.append("검색어를 입력하세요"); 
+            errMsg.append("Please enter a search term."); 
             frame.parentElement.append(errMsg);
         }
     }

@@ -104,3 +104,77 @@
         }
     }
 }
+
+
+@media screen and (max-width:1179px) {
+    #youtube {
+        padding: 200px 20px;
+        .inner {
+            width: 100%;
+            .vidList {
+                .wrap {
+                    article {
+                        &:nth-of-type(1) {
+                            h2 {
+                                font: bold 18px/1.2 'arial'; 
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            p {
+                                font: 12px/1.2 'arial'; 
+                            } 
+                            span {
+                                font: 12px/1.2 'arial';
+                            }   
+                        }                       
+                    }
+                }                         
+            }
+        }
+    }    
+}
+
+
+@media screen and (max-width:539px) {
+    #youtube {
+        padding: 200px 30px;
+        .inner {
+            h1 {
+                font: bold 40px/1 'Lora';
+            }
+            >p {
+                font: 12px/1.2 'arial';
+            }
+            .vidList {
+                .wrap {
+                    article {
+                        width: 49%;  
+                        margin-right: 2%;
+                        &:nth-of-type(1) {
+                            h2 {
+                                font: bold 16px/1.2 'arial'; 
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            width: 0;
+                            margin-right: 0;
+                            padding: 0;
+                            p {
+                                display: none;
+                            } 
+                            span {
+                                display: none;
+                            }   
+                        }                      
+                    }
+                }                         
+            }
+            figure.pop {        
+                .btnClose { 
+                    top: 30px; 
+                    right: 30px; 
+                }
+            }
+        }
+    }    
+}
