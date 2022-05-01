@@ -112,3 +112,17 @@ function moveTo(target){
     // 이동해서 정가운데로 이동시키는 메소드
     map.setCenter(moveLatLon);   
 }
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+/* ------------------- menu ------------------- */
+const btnCall = document.querySelector(".btnCall");
+const menuMo = document.querySelector(".menuMo");
+
+btnCall.onclick = function(e){
+    e.preventDefault();
+
+    btnCall.classList.toggle("on");
+    menuMo.classList.toggle("on");
+}

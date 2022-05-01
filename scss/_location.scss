@@ -24,7 +24,7 @@
             li {
                 float: left; 
                 margin-right: 10px;
-                color: #ccc;
+                color: #ddd;
                 font-size: 20px;
                 a {
                     display: block;
@@ -32,9 +32,9 @@
                     height: 24px; 
                     background: #111;
                     font: bold 12px/24px '맑은 고딕';
-                    color: #ccc; 
+                    color: #ddd; 
                     text-align: center;
-                    border: 1px solid #ccc;
+                    border: 1px solid #ddd;
                     border-radius: 10px;
                     position: absolute;
                     top: 50%;
@@ -65,27 +65,25 @@
                 width: 32%;
                 a {
                     display: block;                                         
-                    background: #111;
                     margin-top: 10px;
-                    border-bottom: 1px solid #aaa;
-                    padding: 10px 30px;
+                    border-bottom: 1px solid #ddd;
+                    padding: 15px 30px;
                     h2 {
                         font: bold 18px/1 '맑은 고딕';
-                        color: #ccc; 
+                        color: #ddd; 
                         text-align: left;
                         padding: 5px;
                         margin-bottom: 5px;
                     }
                     p {
-                        font: 12px/1 'arial';
-                        color: #ccc;
+                        font: 12px/1 '맑은 고딕';
+                        color: #ddd;
                         text-align: left;
                         padding: 5px;
                     }
                 }
                 &.on a {
                     background: #484858; 
-                    color: #333;
                 }
                 &:nth-of-type(3) {
                     margin-right: 0;

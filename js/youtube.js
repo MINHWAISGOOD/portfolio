@@ -1,13 +1,3 @@
-/*
-
-API key = AIzaSyCYd9SWqo1_9ckWvx--2D68sG_il9hYTtM
-
-playlistId = PLQ_1WY7bfG-_40vcccLX3cKc8JQ5swuah
-
-https://www.googleapis.com/youtube/v3/playlistItems
-
-*/
-
 const vidList = document.querySelector(".vidList");
 const key = "AIzaSyCYd9SWqo1_9ckWvx--2D68sG_il9hYTtM";
 const playlistId = "PLQ_1WY7bfG-_40vcccLX3cKc8JQ5swuah";
@@ -79,3 +69,17 @@ vidList.addEventListener("click",(e)=>{
         if(e.target == close) pop.remove();
     }
 });
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+/* ------------------- menu ------------------- */
+const btnCall = document.querySelector(".btnCall");
+const menuMo = document.querySelector(".menuMo");
+
+btnCall.onclick = function(e){
+    e.preventDefault();
+
+    btnCall.classList.toggle("on");
+    menuMo.classList.toggle("on");
+}

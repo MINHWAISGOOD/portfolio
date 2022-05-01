@@ -10,28 +10,10 @@ btnCall.onclick = function(e){
 }
 
 
-
-/* ------------------- community ------------------- */
-function tableToggle() {
-    const tableTitle = document.querySelectorAll(".tableTitle");
-
-    tableTitle.forEach((item)=>{
-        const tableContent = item.closest("tr").nextElementSibling;
-
-        item.addEventListener("click", ()=>{
-            tableContent.classList.toggle("on");
-            item.classList.toggle("on");
-        })
-    })
-}
-
-tableToggle();
-
-
 /* ------------------- scroll ------------------- */
 const sections = document.querySelectorAll("section");
 const lis = document.querySelectorAll("body >ul li");
-const base = -300;
+const base = -200;
 
 setPos();
 
@@ -83,10 +65,20 @@ function setPos() {
 /* ------------------- swiper ------------------- */ 
 var swiper = new Swiper(".mySwiper", {
     direction:"horizontal", //슬라이딩 방향 
-    slidesPerView: 4,//하나의 화면당 보일 패널의 갯수 
-    spaceBetween: 30,//슬라이드 간 사이간격
+    slidesPerView: 1,//하나의 화면당 보일 패널의 갯수 
+    spaceBetween: 10,//슬라이드 간 사이간격
     loop: true,//슬라이딩 순환의 여부 결정
     grabCursor:true, //스와이프시 마우스 커서 모양
+    breakpoints: { // 반응형 조건 속성
+        539: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        1179: {
+            slidesPerView: 4,
+            spaceBetween: 30
+        }
+    },
     autoplay:{
         delay: 3000,
         disableOnInteraction:false,

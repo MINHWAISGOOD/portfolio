@@ -89,3 +89,17 @@ function isPwd(name1, name2, len){
     }
 }
 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+/* ------------------- menu ------------------- */
+const btnCall = document.querySelector(".btnCall");
+const menuMo = document.querySelector(".menuMo");
+
+btnCall.onclick = function(e){
+    e.preventDefault();
+
+    btnCall.classList.toggle("on");
+    menuMo.classList.toggle("on");
+}
+
