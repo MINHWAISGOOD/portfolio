@@ -1,205 +1,203 @@
 #gallery {
-    width: 100%;
-    padding: 200px 0;
-    background: #111;
-    .inner {
-        width: 1180px;
-        margin: 0 auto;
-        position: relative;
-        h1 {
-            font: bold 60px/1 'Lora';
-            color: #eee;
-            margin-bottom: 50px;
-        }
-        >p {
-            font: 20px/1.2 'arial';
-            color: #eee;
-            padding: 30px 20vw 20px 15vw;
-        }
-        #searchBox {
-            width: 100%; 
-            padding: 20px; 
-            font-size: 0;
-            text-align: right;
-            margin-top: 170px;
-            #search {
-                width: 200px; 
-                height: 20px; 
-                background: #ddd;
-                border: 1px solid #333; 
-                padding-left: 10px;
-            }
-            .btnSearch {
-                width: 50px; 
-                height: 20px; 
-                background: #111;
-                border: 1px solid #ddd;
-                font: bold 10px/20px 'arial'; 
-                color: #ddd;
-                text-align: center; 
-                cursor: pointer;
-                margin-left: 10px; 
-                vertical-align: top;
-            }
-        }
-        #wrap {
-            width: 100%; 
-            padding: 20px;
-            .loading {
-                width: 100px; 
-                position: fixed; 
-                top: 50%; 
-                left: 50%;
-                transform: translate(-50%,-30%); 
-                transition: 1s;
-                &.off {
-                    opacity: 0;
-                }
-            }
-            >p {
-                font: 30px/1 'arial';
-                color: #ddd;
-                text-align: center;
-                padding: 100px 0;
-            }
-            #list {
-                width: 100%; 
-                opacity: 0; 
-                transform: translateY(100px); 
-                transition: 1s;
-                border-bottom: 1px solid #ddd;
-                &.on {
-                    opacity: 1; 
-                    transform: translateY(0px);
-                }
-                &::after {
-                    content: ''; 
-                    display: block; 
-                    clear: both;
-                }
-                li {
-                    float: left; 
-                    width: calc(100% / 4);
-                    padding: 10px 5px;
-                    border-top: 1px solid #ddd;
-                    div{
-                        width: 100%;
-                        height: 200px; 
-                        padding: 10px; 
-                        box-shadow: 5px 5px 20px rgba(0,0,0,0.1); 
-                        border-radius: 5px;
-                        margin-top: 10px;
-                        margin-bottom: 30px;                        
-                        a {
-                            >img {
-                                width: 100%;
-                                height: 100%; 
-                                transition: 1s;
-                            }
-                        }
-                        p {
-                            font: 14px/1.2 'arial'; 
-                            color: #ddd;
-                            margin-top: 10px; 
-                            margin-bottom: 10px;
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-        }
-    }
+	width: 100%;
+	padding: 200px 0;
+	background: #111;
+	.inner {
+		width: 1180px;
+		margin: 0 auto;
+		position: relative;
+		h1 {
+			font: bold 60px/1 'Lora';
+			color: #eee;
+			margin-bottom: 50px;
+		}
+		> p {
+			font: 20px/1.2 'arial';
+			color: #eee;
+			padding: 30px 20vw 20px 15vw;
+		}
+		#searchBox {
+			width: 100%;
+			padding: 20px;
+			font-size: 0;
+			text-align: right;
+			margin-top: 170px;
+			#search {
+				width: 200px;
+				height: 20px;
+				background: #ddd;
+				border: 1px solid #333;
+				padding-left: 10px;
+			}
+			.btnSearch {
+				width: 50px;
+				height: 20px;
+				background: #111;
+				border: 1px solid #ddd;
+				font: bold 10px/20px 'arial';
+				color: #ddd;
+				text-align: center;
+				cursor: pointer;
+				margin-left: 10px;
+				vertical-align: top;
+			}
+		}
+		#wrap {
+			width: 100%;
+			padding: 20px;
+			.loading {
+				width: 100px;
+				position: fixed;
+				top: 80%;
+				left: 50%;
+				transform: translate(-50%, -30%);
+				transition: 1s;
+				&.off {
+					opacity: 0;
+				}
+			}
+			> p {
+				font: 30px/1 'arial';
+				color: #ddd;
+				text-align: center;
+				padding: 100px 0;
+			}
+			#list {
+				width: 100%;
+				opacity: 0;
+				transform: translateY(100px);
+				transition: 1s;
+				border-bottom: 1px solid #ddd;
+				&.on {
+					opacity: 1;
+					transform: translateY(0px);
+				}
+				&::after {
+					content: '';
+					display: block;
+					clear: both;
+				}
+				li {
+					float: left;
+					width: calc(100% / 4);
+					padding: 10px 5px;
+					border-top: 1px solid #ddd;
+					div {
+						width: 100%;
+						height: 200px;
+						padding: 10px;
+						box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+						border-radius: 5px;
+						margin-top: 10px;
+						margin-bottom: 30px;
+						a {
+							> img {
+								width: 100%;
+								height: 100%;
+								transition: 1s;
+							}
+						}
+						p {
+							font: 14px/1.2 'arial';
+							color: #ddd;
+							margin-top: 10px;
+							margin-bottom: 10px;
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
-aside { 
-    width: 100%; 
-    height: 100vh;
-    background: rgba(0,0,0,0.8);
-    position: fixed; 
-    top: 0;
-    left: 0;
-    padding: 5vw;
-    display: flex; 
-    justify-content: 
-    center; align-items: center;
-    .con {
-        width: 70%; 
-        height: 80%;
-        >img {
-            width: 100%; 
-            height: 100%; 
-            object-fit: cover;
-        }
-    }
-    .close {
-        position: absolute; 
-        top: 50px; 
-        right: 50px; 
-        font-size: 40px;
-        color: #fff; 
-        cursor: pointer;
-    }
+aside {
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.con {
+		width: 70%;
+		height: 80%;
+		> img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.close {
+		position: absolute;
+		top: 50px;
+		right: 50px;
+		font-size: 40px;
+		color: #fff;
+		cursor: pointer;
+	}
 }
 
-
-@media screen and (max-width:1179px) {
-    #gallery {
-        padding: 200px 20px;
-        .inner {
-            width: 100%;
-            #wrap {
-                padding: 10px;
-            }
-        }
-    }    
-    aside { 
-        .close { 
-            top: 30px; 
-            right: 30px; 
-        }
-    }
+@media screen and (max-width: 1179px) {
+	#gallery {
+		padding: 200px 20px;
+		.inner {
+			width: 100%;
+			#wrap {
+				padding: 10px;
+			}
+		}
+	}
+	aside {
+		.close {
+			top: 30px;
+			right: 30px;
+		}
+	}
 }
 
+@media screen and (max-width: 539px) {
+	#gallery {
+		padding: 200px 30px;
+		.inner {
+			h1 {
+				font: bold 40px/1 'Lora';
+			}
+			> p {
+				font: 12px/1.2 'arial';
+			}
+			#searchBox {
+				padding: 5px 0;
+				margin-bottom: 20px;
+				#search {
+					width: 100px;
+				}
+			}
+			#wrap {
+				padding: 0;
+				#list {
+					li {
+						width: calc(100% / 2);
+						div {
+							height: 180px;
+						}
+					}
+				}
+			}
+		}
+	}
 
-@media screen and (max-width:539px) {
-    #gallery {
-        padding: 200px 30px;
-        .inner {
-            h1 {
-                font: bold 40px/1 'Lora';
-            }
-            >p {
-                font: 12px/1.2 'arial';
-            }
-            #searchBox {
-                padding: 5px 0;
-                margin-bottom: 20px;
-                #search {
-                    width: 100px;  
-                }
-            }
-            #wrap {
-                padding: 0;
-                #list {
-                    li {
-                        width: calc(100% / 2);
-                        div{
-                            height: 180px;                          
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-    aside { 
-        .con {
-            width: 100%; 
-            height: 70%;
-        }
-        .close { 
-            top: 35px; 
-            right: 20px; 
-        }
-    }    
+	aside {
+		.con {
+			width: 100%;
+			height: 70%;
+		}
+		.close {
+			top: 35px;
+			right: 20px;
+		}
+	}
 }
